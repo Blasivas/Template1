@@ -33,26 +33,36 @@ const { title } = Astro.props;
 				header{
 					justify-content: center;
 					align-items: center;
+					display: flex;
+					flex-direction: column;
+
 					span{
-						font-size: 14px;
+						font-size: 0.875rem;
+						display: flex;
 						font-family: 'Inter', sans-serif;
-						margin: 0;
+						margin: 0 0 0.25rem 0;
+						height: 1.25rem;
+
 					}
 					h1{
-						font-size: 48px;
+						font-size: 3rem;
 						font-family: 'Inter', sans-serif;	
 						margin: 0;
-						margin-bottom: 24px;
+						margin-bottom: 1.5rem;
+						letter-spacing: 1px;
+						line-height: 0.9;
+						height: 6rem;
 					}
 				}
 	
 				img{
 					width: 100%;
+					margin-top: 1.5rem;
 				}
 	
 				button{
-					margin-block: 2rem;
-					padding: 12px 24px;
+					margin: 1.25rem 0 2rem 0;
+					padding: 0.75rem 1.5rem;
 					color: white;
 					background-color: #00A63E;
 					font-size: 1rem;
@@ -60,21 +70,22 @@ const { title } = Astro.props;
 					font-weight: bold;
 					border-radius: .375rem;
 					border: none;
+					height: 3rem;
 					&:hover{
 						background-color: #008235;
 						cursor: pointer;
-						
 					}
 				}
 	
 				p{
 					text-align: left;
-					font-size: 16px;
+					font-size: 1rem;
 					font-family: 'Inter', sans-serif;
 					margin: 0;
-					margin-bottom: 24px;
+					margin-bottom: 1.5rem;
 					max-width: 736px;
-					line-height: 1.5;
+					line-height: 1.6;
+					
 				}
 			}
 	
@@ -87,26 +98,26 @@ const { title } = Astro.props;
 				align-items: center;
 				& p{
 					max-width: 736px;
-					font-size: 1rem;
+					font-size: 0.875rem;
 					font-family: 'Inter', sans-serif;
 					margin-bottom: 1rem;
 					margin-top: 0;
 					text-align: center;
-					font-size: 14px;
 					color: #000;
-					line-height: 20px;
+					line-height: 1.25rem;
+					opacity: 0.8;
 				}
 			}
 	
 			footer {
 				text-align: center;
-				margin-top: 1.25rem; 
+				margin-top: 1.25rem;
 				justify-content: center;
 				align-items: center;
 				padding-bottom: 1rem;
 				a {
 					margin: 0 .4rem;
-					font-size: 16px;
+					font-size: 1rem;
 					font-family: 'Inter', sans-serif;
 					text-decoration: none;
 					color: #6E6F8B;
@@ -120,18 +131,18 @@ const { title } = Astro.props;
 	
 			@media (max-width: 768px) {
 				.container header h1 {
-					font-size: 36px;
+					font-size: 2.25rem;
 				}
 	
 				.copyright{
 					padding-inline: 1rem;
 					p{
-						max-width: 343px;
+						max-width: 21.4375rem;
 					}
 				}
 	
 				footer{
-					max-width: 343px;
+					max-width: 21.4375rem;
 				}
 	
 				footer {

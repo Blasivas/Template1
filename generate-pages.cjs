@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 function generatePages(templateName, count) {
-  const dir = path.join(__dirname, `src/content/${templateName}`);
+  const dir = path.join(__dirname, `src/content`);
   fs.mkdirSync(dir, { recursive: true });
 
   for (let i = 1; i <= count; i++) {
